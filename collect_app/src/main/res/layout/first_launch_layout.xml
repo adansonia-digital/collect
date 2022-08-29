@@ -12,17 +12,32 @@
         android:background="?attr/colorSurface">
 
         <ImageView
-            android:id="@+id/logo"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/logo2"
+            android:layout_width="329dp"
+            android:layout_height="289dp"
             android:layout_marginTop="@dimen/margin_standard"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/collect_app_name"
+            android:src="@drawable/adansonia_icon_4_svg_01_01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/adansonia_icon_4_svg_01_01" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="668dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/collect_app_name"
             android:src="@drawable/odk_logo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintStart_toEndOf="@+id/app_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/odk_logo" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/center"
@@ -32,9 +47,10 @@
             android:paddingHorizontal="@dimen/margin_large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5">
+            app:layout_constraintVertical_bias="0.65">
 
             <TextView
                 android:id="@+id/tagline"
@@ -51,18 +67,19 @@
                 style="@style/Widget.Collect.Button.OutlinedButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standard"
                 android:backgroundTint="?colorPrimary"
                 android:text="@string/configure_with_qr_code"
                 android:textAppearance="?attr/textAppearanceBody1"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="@dimen/margin_standard"
+                android:textColor="#3E2723"
                 app:icon="@drawable/ic_baseline_qr_code_scanner_24"
                 app:iconTint="@android:color/white"
-                app:layout_constraintTop_toBottomOf="@id/tagline"
                 app:layout_constraintBottom_toTopOf="@+id/configure_manually_button"
                 app:layout_constraintEnd_toEndOf="@+id/barrierEnd"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintWidth_min="wrap"/>
+                app:layout_constraintTop_toBottomOf="@id/tagline"
+                app:layout_constraintWidth_min="wrap"
+                tools:ignore="TextContrastCheck" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/configure_manually_button"
@@ -99,10 +116,11 @@
             android:textColor="@color/color_on_surface_medium_emphasis"
             app:layout_constraintBottom_toTopOf="@id/dont_have_server"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.229"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/center"
-            app:layout_constraintVertical_bias="1"
-            tools:text="ODK Collect v2022.3" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="ADANSONIA Collect powered by" />
 
         <TextView
             android:id="@+id/dont_have_server"
@@ -126,7 +144,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/dont_have_server"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/dont_have_server"
-            app:layout_constraintTop_toTopOf="@+id/dont_have_server" />
+            app:layout_constraintTop_toTopOf="@+id/dont_have_server"
+            tools:ignore="TextContrastCheck" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/configureLater"

@@ -996,14 +996,14 @@
      ##############################################
      -->
     <string name="about_preferences">About</string>
-    <string name="tell_your_friends">Share ODK Collect</string>
-    <string name="tell_your_friends_msg">Are your colleagues still collecting data on paper? Share ODK Collect with them.</string>
+    <string name="tell_your_friends">Share ADANSONIA Collect</string>
+    <string name="tell_your_friends_msg">Are your colleagues still collecting data on paper? Share Adansonia Collect with them.</string>
     <string name="leave_a_review">Leave a Play Store review</string>
     <string name="leave_a_review_msg">Your (hopefully positive) review increases the visibility of the App in the Play Store.</string>
-    <string name="odk_website">Visit the ODK website</string>
-    <string name="odk_website_summary">ODK is used to collect data for social good in challenging environments.</string>
-    <string name="odk_forum">Join the ODK forum</string>
-    <string name="odk_forum_summary">Join the forum to get support, request features, contribute code/translations! </string>
+    <string name="odk_website">Visit the ADANSONIA website</string>
+    <string name="odk_website_summary">ADANSONIA Collect is used to collect data for social good in challenging environments.</string>
+    <string name="odk_forum">Join the ADANSONIA forum</string>
+    <string name="odk_forum_summary">Join the forum to get support, request features, contribute to the community! </string>
     <string name="all_open_source_licenses">Open source libraries/licenses</string>
     <string name="all_open_source_licenses_msg">We stand on the shoulders of giants!</string>
 
