@@ -11,34 +11,6 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorSurface">
 
-        <ImageView
-            android:id="@+id/logo2"
-            android:layout_width="329dp"
-            android:layout_height="289dp"
-            android:layout_marginTop="@dimen/margin_standard"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/collect_app_name"
-            android:src="@drawable/adansonia_icon_4_svg_01_01"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/adansonia_icon_4_svg_01_01" />
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="72dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="668dp"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/collect_app_name"
-            android:src="@drawable/odk_logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.254"
-            app:layout_constraintStart_toEndOf="@+id/app_name"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/odk_logo" />
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/center"
             android:layout_width="wrap_content"
@@ -47,10 +19,9 @@
             android:paddingHorizontal="@dimen/margin_large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.65">
+            app:layout_constraintVertical_bias="0.66">
 
             <TextView
                 android:id="@+id/tagline"
@@ -94,7 +65,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/barrierEnd"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/configure_via_qr_button"
-                app:layout_constraintWidth_min="wrap"/>
+                app:layout_constraintWidth_min="wrap" />
 
             <androidx.constraintlayout.widget.Barrier
                 android:id="@+id/barrierEnd"
@@ -104,54 +75,106 @@
                 app:constraint_referenced_ids="configure_via_qr_button,configure_manually_button"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/app_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_extra_large"
-            android:layout_marginBottom="@dimen/margin_extra_small"
-            android:textAppearance="?textAppearanceBody1"
-            android:textColor="@color/color_on_surface_medium_emphasis"
-            app:layout_constraintBottom_toTopOf="@id/dont_have_server"
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="329dp"
+            android:layout_height="289dp"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/collect_app_name"
+            android:src="@drawable/adansonia_icon_transparent_03_01"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.229"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/center"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="ADANSONIA Collect powered by" />
-
-        <TextView
-            android:id="@+id/dont_have_server"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin"
-            android:text="@string/dont_have_project"
-            android:textAppearance="?textAppearanceBody2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/try_collect"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/try_collect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_extra_small"
-            android:text="@string/try_demo"
-            android:textAppearance="@style/TextAppearance.Collect.Link"
-            app:layout_constraintBottom_toBottomOf="@+id/dont_have_server"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/dont_have_server"
-            app:layout_constraintTop_toTopOf="@+id/dont_have_server"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/adansonia_icon_transparent_03_01" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/configureLater"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="visible"
-            app:constraint_referenced_ids="dont_have_server,try_collect" />
+            app:constraint_referenced_ids="dont_have_server,try_collect"
+            tools:ignore="NotSibling" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/center2"
+            android:layout_width="357dp"
+            android:layout_height="75dp"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:paddingHorizontal="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/center"
+            app:layout_constraintVertical_bias="0.853"
+            tools:ignore="DuplicateIds,NotSibling">
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrierEnd2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:barrierDirection="end"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/color_on_surface_medium_emphasis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.017"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="23dp"
+                tools:text="ADANSONIA Collect powered by" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="63dp"
+                android:layout_height="24dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/collect_app_name"
+                android:src="@drawable/odk_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/app_name"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="23dp"
+                tools:srcCompat="@drawable/odk_logo" />
+
+            <TextView
+                android:id="@+id/dont_have_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dont_have_project"
+                android:textAppearance="?textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.231"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+            <TextView
+                android:id="@+id/try_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/try_demo"
+                android:textAppearance="@style/TextAppearance.Collect.Link"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dont_have_server"
+                app:layout_constraintTop_toTopOf="@+id/dont_have_server"
+                tools:ignore="TextContrastCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="center" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

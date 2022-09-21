@@ -8,6 +8,7 @@ the specific language governing permissions and limitations under the License. -
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- strings that should not be translated -->
     <string name="collect_app_name" translatable="false">ADANSONIA Collect</string>
+    <string name="powered_by" translatable="false">powered by</string>
     <string name="app_url" translatable="false">https://adansonia.ca</string>
     <string name="forum_url" translatable="false">"https://forum.getodk.org"</string>
     <string name="never_value" translatable="false">never</string>

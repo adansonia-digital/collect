@@ -56,11 +56,20 @@ class FirstLaunchActivity : CollectAbstractActivity() {
                 )
             }
 
+            //We can remove version information and put it on the about section
+            appName.text =  getString(R.string.collect_app_name)
+
             appName.text = String.format(
                 "%s %s",
                 getString(R.string.collect_app_name),
-                versionInformation.versionToDisplay
+                getString(R.string.powered_by)
             )
+
+            /* appName.text = String.format(
+                 "%s %s",
+                 getString(R.string.collect_app_name),
+                 versionInformation.versionToDisplay
+             )*/
 
             configureLater.addOnClickListener {
                 Analytics.log(AnalyticsEvents.TRY_DEMO)
